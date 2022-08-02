@@ -123,3 +123,62 @@
 
 .attribution { font-size: 11px; text-align: center; position: absolute; bottom: 1rem;}
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/* Media query for mobile view */
+
+@media only screen and (max-width: 900px) {
+
+
+    body {
+        font-size: 12px;
+        background-color: var(--Cream);
+        width: 100vw;
+        height: 100vh;
+        font-family: "Montserrat",sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    
+     }
+    
+    .product-container {
+
+        display: flex;
+        flex-direction: column;
+        font-family: "Montserrat",sans-serif;
+        border: 1px solid white;
+        width: 70vw;
+        height: 90vh;
+        background-color: white;
+        border-radius: 10px;
+    
+    
+     }
+
+     .image {
+        flex: 1;
+        height: 40%;
+
+     }
+
+     img {
+         border-radius: 10px;
+         border-bottom-left-radius: 0;
+         border-bottom-right-radius:0;
+     }
+
+     .details {
+
+        flex:2;
+
+     }
+
+     .product-title {
+        padding: 0.2rem;
+     }
+
+     .attribution {
+        bottom: 0;
+     }
+  }
